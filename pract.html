@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Practice</title>
+    <style>
+        .special {
+            color: blueviolet;
+        }
+
+        #myheader {color:red;}
+        
+            
+    
+        th,td {
+            background-color: aqua;
+            border: 1px solid black;
+            border-radius: 10px;
+            
+        }
+        .imgcon {
+            width: 100%;
+            height: 100px;
+            background-color: blueviolet ;
+            border: 5px solid black;
+            
+        }
+        .fiximg {
+            width: 31%;
+            float: left;
+            padding: 15px;
+        }
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: auto;
+  overflow: hidden;
+  background-color: #333;
+  
+}
+
+li {
+  float: left;
+ 
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-left: 50px;    
+}
+
+li a:hover {
+  background-color: #111;
+}
+    </style>
+</head>
+<body>
+    
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li style="float: right; margin-right: 150px;"><a href="#about">Feedback</a></li>
+      </ul>
+
+      <h1 id="myheader">Practice html</h1>
+
+    <p>This is only for <mark>revision</mark></p>
+    <img src="gym.jpeg" alt="this is gym image" height="150px" width="150px">
+    <img src="gym.jpeg" alt="this is gym image" height="150px" width="150px">
+    <img src="gym.jpeg" alt="this is gym image" height="150px" width="150px">
+    <table style="width: 50%;">
+        <tr>
+            <th colspan="2">Name+Email</th>
+            
+            <th>Gender</th>
+        </tr>
+        <tr>
+            <td>Sanwar</td>
+            <td>imams@gmail.com</td>
+            <td>male</td>
+        </tr>
+        <tr>
+            <td>Shivam</td>
+            <td>yadav@gmail.com</td>
+            <td>male</td>
+        </tr>
+    </table>
+    <p>
+        <img src="fit.jpg" style="float:right; width: 150; height: 150px;">
+        <img src="fit.jpg" style=" width: 150; height: 150px;">
+        <img src="fit.jpg" style=" width: 150; height: 150px;">
+        <img src="fit.jpg" style="float:right; width: 150; height: 150px;">
+        
+        </p>
+       <p class="special"> This paragraph contains an image<br>
+        This is a paragraph</p>
+
+    <iframe src="https://www.w3schools.com" style="border:none;"></iframe>
+
+    <p id="demo">Hi.</p>
+
+<script>
+document.
+getElementbyId
+("demo").innerHTML = "Hello World!";
+</script>
+
+<form>
+    <label>First name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label>Last name:</label><br>
+    <input type="text" id="lname" name="lname"><br><br> 
+    <input type="submit" value="Submit">
+  </form><br>
+  
+  <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea><br><br>
+
+  <canvas id="myCanvas" width="450" height="300" style="background-color: #fc0606;"></canvas>
+  <script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    
+    // Create gradient
+    var grd = ctx.createLinearGradient(0, 0, 400, 0);
+    grd.addColorStop(0, "red");
+    grd.addColorStop(1, "white");
+    
+    // Fill with gradient
+    ctx.fillStyle = grd;
+    ctx.fillRect(10, 10, 350, 250);
+    </script>
+
+<svg height="130" width="500">
+    <defs>
+      <linearGradient id="grad1">
+        <stop offset="0%" stop-color="yellow" />
+        <stop offset="100%" stop-color="red" />
+      </linearGradient>
+    </defs>
+    <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+    <text fill="#ffffff" font-size="45" font-family="Verdana" x="55" y="86">MI</text>
+    <text fill="#ffffff" font-size="15" font-family="Verdana" x="115" y="86">BHU</text>
+
+  </svg>
+
+  <h1>This is heading 1</h1>
+<p>This is some text.</p>
+<br>
+
+<h2>This is heading 2</h2>
+<p>This is some other text.</p>
+<hr>
+
+<h2>This is heading 2</h2>
+<p>This is some other text.</p>
+
+
+<div style="border: 5px solid black; height: 300px; width: 100%; display: flex;">
+    <div style="border: 5px solid red; width: 30%; height: 250px; margin: auto; background-image: url(bg.jpg); opacity: 0.5;"></div>
+    <div style="border: 5px solid red; width: 30%; height: 250px; margin: auto; background-image: url(bg.jpg); opacity: 0.5;"></div>
+    <div style="border: 5px solid red; width: 30%; height: 250px; margin: auto; background-image: url(bg.jpg); opacity: 0.5;"></div>
+</div>
+</body>
+</html>
